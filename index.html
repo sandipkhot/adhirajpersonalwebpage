@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to My Fun Page!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 8px #ff4e50;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .hobby-link {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 1.2rem 2rem;
+            font-size: 1.2rem;
+            color: #ff4e50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+        .hobby-link:hover {
+            background: #ff4e50;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hobby-link {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Fun Page!</h1>
+        <p>Hi! I'm 8 years old and these are my favorite hobbies:</p>
+    </header>
+    <nav>
+        <a class="hobby-link" href="rccars.html">RC Cars</a>
+        <a class="hobby-link" href="races.html">Running Race</a>
+        <a class="hobby-link" href="#football">Football</a>
+        <a class="hobby-link" href="#cricket">Cricket</a>
+        <!-- <a class="hobby-link" href="#photo-gallery">Photo Gallery</a> -->
+    </nav>
+</body>
+</html>
